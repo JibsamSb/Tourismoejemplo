@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>destinos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+
+	<script type="text/javascript" src="dist/Chart.bundle.min.js"></script>
+	
+	
+	
+	<script type="text/javascript">
+
+
+$(document).ready(function() {
+
+var datos = {
+			type: "pie",
+			data : {
+				datasets :[{
+					data : [
+						20,
+						30,
+						10,
+						50,
+						
+					],
+					backgroundColor: [
+						"#F7464A",
+						"#46BFBD",
+						"#FDB45C",
+						"#949FB1",
+						
+					],
+				}],
+				labels : [
+					"ROMA",
+					"PARIS",
+					"LOS ANGELES ",
+					"BERLIN ",
+					
+				]
+			},
+			options : {
+				responsive : true,
+			}
+		};
+
+		var canvas = document.getElementById('chart').getContext('2d');
+		window.pie = new Chart(canvas, datos);
+
+		setInterval(function(){
+			datos.data.datasets.splice(0);
+			var newData = {
+				backgroundColor : [
+					"#F7464A",
+					"#46BFBD",
+					"#FDB45C",
+					"#949FB1",
+					"#4D5360",
+				],
+				data : [getRandom(), getRandom(), getRandom(), getRandom(), getRandom()]
+			};
+
+			datos.data.datasets.push(newData);
+
+			window.pie.update();
+
+		}, 5000);
+
+
+
+		function getRandom(){
+			return Math.round(Math.random() * 100);
+		}
+
+
+	});
+
+
+
+
+	
+	 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>		
+
+
+
+
+
+
+
+
+
+<!--[if lt IE 8]>
+		<div style='text-align:center'><a href="https://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
+	<![endif]-->    
+
+<!--[if lt IE 9]>
+  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+
+<body class="subpage">
+<div id="main">
+
+<div class="top1 clearfix">
+<header><div class="logo_wrapper log"><a href="index.html" class="logo"><img src="images/logo.png" width="200px" alt=""></a></div></header>
+<div class="top2 clearfix">
+<div class="search-form-wrapper clearfix">
+<form id="search-form" action="search.php" method="GET" accept-charset="utf-8" class="navbar-form" >
+	<input type="text" name="s" value='Search' onBlur="if(this.value=='') this.value='Search'" onFocus="if(this.value =='Search' ) this.value=''">
+	<a href="#" onClick="document.getElementById('search-form').submit()"></a>
+</form>	
+</div>	
+<div class="menu_wrapper clearfix">
+<div class="navbar navbar_">
+	<div class="navbar-inner navbar-inner_">
+		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+		<div class="nav-collapse nav-collapse_ collapse">
+			<ul class="nav sf-menu clearfix">
+<li ><a href="index.html">Inicio</a></li>
+<li  ><a href="index-1.html">Nosotros</a></li>
+
+							
+
+<li  class="active"><a href="index-3.html">destinos</a></li>
+
+<li><a href="galeria.html">Blog</a></li>
+											
+<li><a href="index-6.html">contacto</a></li>	
+    </ul>
+		</div>
+	</div>
+</div>	
+</div>
+</div>	
+</div>
+
+<div id="slider_wrapper">
+
+<img src="images/destiny.jpg" alt="" class="grad2">
+<div class="slider_bot">
+<div class="page_title">Destinos</div>
+<div class="breadcrumbs1">
+<div class="breadcrumbs1_inner"><a href="index.html">Inicio</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;Destinations</div>	
+</div>
+</div>
+</div>
+
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span8">
+	
+<h1>Nuestros DESTINOS MAS POPULARES</h1>
+
+<div class="thumb3">
+	<div class="thumbnail clearfix">
+		<img src="images/roma.jpg" alt="" class="grad2">
+		<div class="caption">
+			<p>
+				<strong>Roma </strong>
+			</p>
+			<p>
+				Roma es una ciudad, italiana, de 2 877 215 habitantes,2​3​ capital de la región del Lacio y de Italia. Es el municipio más poblado de Italia y es la cuarta ciudad más poblada de la Unión Europea.4​ Por antonomasia se la conoce desde fines de la Antigüedad como la Urbe. También es llamada: La Ciudad Eterna (en italiano: Città Eterna).
+
+En el transcurso de su historia, que abarca tres milenios, llegó a extender sus dominios sobre toda la cuenca del Mediterráneo y gran parte de Europa. Como capital del Imperio romano, se constituyó en una de las primeras grandes metrópolis de la humanidad, centro de una de las civilizaciones antiguas más importantes. Influyó en la sociedad, la cultura, la lengua, la literatura, el arte, la arquitectura, la filosofía, la religión, el derecho y la moral de los siglos sucesivos.
+
+Es la ciudad con la más alta concentración de bienes históricos y arquitectónicos del mundo;5​ su centro histórico delimitado por el perímetro que marcan las murallas aurelianas, superposición de huellas de tres milenios, es la expresión del patrimonio histórico, artístico y cultural del mundo occidental europeo.6​ En 1980, junto a las propiedades extraterritoriales de la Santa Sede que se encuentran en la ciudad y la Basílica de San Pablo Extramuros, fue incluida en la lista del Patrimonio de la Humanidad de la Unesco.7​8​
+			</p>			
+			
+		</div>
+	</div>
+</div>
+
+<div class="thumb3">
+	<div class="thumbnail clearfix">
+		<img src="images/paris.jpg" alt="" class="grad2">
+		<div class="caption">
+			<p>
+				<strong>Paris </strong>
+			</p>
+			<p>
+				París (en francés Paris, pronunciado Acerca de este sonido [paʁi] (?·i)) es la capital de Francia y su ciudad más poblada. Capital de la región de Isla de Francia (o "Región Parisina"), es constituida en la única comuna unidepartamental del país. Está situada a ambos márgenes de un largo meandro del río Sena, en el centro de la cuenca parisina, entre la confluencia del río Marne y el Sena, aguas arriba, y el Oise y el Sena, aguas abajo.
+
+La ciudad de París, dentro de sus estrechos límites administrativos, tiene una población de 2 273 305 habitantes en 2015.2​ Sin embargo, en el siglo XX, el área metropolitana de París se expandió más allá de los límites del municipio de París, y es hoy en día, con una población de 12 405 426 habitantes en 2013, la segunda área metropolitana del continente europeo (después de Londres) y la 28ª del mundo.4​
+			</p>			
+			
+		</div>
+	</div>
+</div>
+
+<div class="thumb3">
+	<div class="thumbnail clearfix">
+		<img src="images/los angeles.jpg" alt="" class="grad2">
+		<div class="caption">
+			<p>
+				<strong>Los Angeles </strong>
+			</p>
+			<p>
+				Los Ángeles (en inglés: Los Angeles, pronunciado AFI: [lɒs ˈændʒəˌləs]), oficialmente Ciudad de Los Ángeles y de manera abreviada L. A., es la ciudad más poblada del estado estadounidense de California y la segunda ciudad más poblada de Estados Unidos. Tiene, según el censo de 2010, una población de 3 792 621 habitantes.2​ Está ubicada en el sur de California y abarca una superficie de 1215 km².
+
+La ciudad es el centro del área estadística metropolitana de Los Ángeles-Long Beach-Santa Ana y del Gran Los Ángeles que, según el censo de 2010, sumaban una población de 13 y 18 millones de personas, respectivamente. Es, por tanto, una de las mayores áreas metropolitanas del mundo3​ y la segunda de Estados Unidos.4​ La ciudad también es la sede del condado de Los Ángeles, uno de los condados más poblados y étnicamente diversos del país;5​ la propia ciudad de Los Ángeles es reconocida como una de las metrópolis más diversas del planeta.6​ A sus habitantes les corresponde el gentilicio «angelinos/as».7​
+			</p>			
+			
+		</div>
+	</div>
+</div>
+
+<div class="thumb3">
+	<div class="thumbnail clearfix">
+		<img src="images/berlin.jpg" alt="" class="grad2">
+		<div class="caption">
+			<p>
+				<strong>Berlin </strong>
+			</p>
+			<p>
+				Una visita guiada a través de la historia de Berlín. Una guía para conocer en español la capital de Alemania, ciudad víctima y testigo de los acontecimientos más apasionantes del siglo XX. Durante el paseo repasaremos la historia del Muro de Berlín y de la Puerta de Brandenburgo. Recorreremos el impresionante Monumento a los Judios Asesinados en Europa y nos detendremos sobre el antiguo emplazamiento del Búnker de Hitler en Berlín. Pasaremos la Isla de los Museos (Patrimonio de la Humanidad desde 1999), veremos el Reichstag, la Gendarmenmarkt, la Ópera, la Universidad Humboldt y la plaza en la que tuvo lugar la gran quema de libros de 1933.
+			</p>			
+			
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+
+<div id="canvas-container" style="width:50%;">
+<h2>Destinos Mas Requeridos</h2>
+		<canvas id="chart" width="500" height="350"></canvas>
+	</div>
+
+
+
+<div class="span4">
+	
+<h2>Incluye</h2>
+
+<ul class="ul1">
+  <li><a href="https://static.iris.net.co/semana/upload/images/2016/6/16/477990_1.jpg">Tiquestes</a></li>
+  <li><a href="https://cdn.expansion.mx/dims4/default/fb0db57/2147483647/thumbnail/800x450%5E/quality/75/?url=https%3A%2F%2Fcdn.expansion.mx%2Fbe%2F8f%2F9a20186a476a868772781d5b5ae3%2Falitas.jpg">Comidas </a></li>
+  <li><a href="https://www.bybus.co.uk/app/uploads/2010/09/Facebook-June-2017-436x256.jpg">Transportes</a></li>
+  <li><a href="https://s-ec.bstatic.com/images/hotel/max1024x768/681/68184730.jpg">Hotel</a></li>
+  <li><a href="http://www.todohumor.com/UserFiles/Image/fondos/2008/marzo/132.jpg">Diversion</a></li>
+  	            		      	      			      
+</ul>
+
+
+
+
+
+</div>	
+</div>	
+</div>	
+</div>
+
+<div id="content2">
+<div class="container">
+<div class="row">
+<div class="span12">
+	
+
+
+
+
+
+</div>	
+</div>	
+</div>	
+</div>
+
+<div class="bot1">
+<div class="container">
+<div class="row">
+<div class="span3">
+	<div class="bot1_title">Siguenos</div>
+	<div class="social_wrapper">
+		<ul class="social clearfix">
+		    <li><a href="#"><img src="images/social_ic1.png"></a></li>
+		    <li><a href="#"><img src="images/social_ic2.png"></a></li>
+		    <li><a href="#"><img src="images/social_ic3.png"></a></li>		    
+		    <li><a href="#"><img src="images/social_ic4.png"></a></li>	
+		    <li><a href="#"><img src="images/social_ic5.png"></a></li>	
+		    <li><a href="#"><img src="images/social_ic6.png"></a></li>	
+		</ul>
+	</div>
+</div>
+<div class="span3">
+	<div class="bot1_title">Destinatinos</div>
+	<ul class="ul0">
+	  <li><a href="index-3.html">Roma</a></li>
+	  <li><a href="index-3.html">Paris</a></li>
+	  <li><a href="index-3.html">Los Angeles</a></li>
+	  <li><a href="index-3.html">Berlin</a></li>
+	</ul>
+</div>
+<div class="span3">
+	<div class="bot1_title">Links</div>
+	<ul class="ul0">
+	  <li><a href="https://www.youtube.com/watch?v=ZHHbpy91O2E">VIDEO</a></li>
+	  <li><a href="#"></a></li>
+	  <li><a href="#"></a></li>
+	  <li><a href="#"></a></li>
+	  <li><a href="#"></a></li>
+	</ul>
+</div>	
+<div class="span3">
+	<div class="bot1_title">Contactanos</div>
+	<div class="bot1_txt1">
+		LLamanos para mayor informacion:<br>
+		<span>1 800 123 4567</span><br>
+
+		<br>
+<br>
+Telefono +1 800 123 1234<br>
+E-mail: <a href="#">mail@bteamny.com</a>
+	</div>
+</div>
+</div>	
+</div>	
+</div>
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="copyright">Copyright   © 2017 Travel Guide. All rights reserved.&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<a href="#">Privacy Policy</a>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<a href="#">Terms of Use</a>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<a href="https://gridgum.com/themes/tag/free-css-templates/">Free CSS Templates</a></div>
+</div>	
+</div>	
+</div>	
+</footer>
+
+	
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

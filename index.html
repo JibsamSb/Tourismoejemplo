@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Travel GUIDE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="tu descripcion">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
+<link rel="stylesheet" href="css/camera.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/camera.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
+
+
+
+
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+	// camera
+	$('#camera_wrap').camera({
+		//thumbnails: true
+		autoAdvance			: true,		
+		mobileAutoAdvance	: true,
+		//fx					: 'simpleFade',
+		height: '51%',
+		hover: false,
+		loader: 'none',
+		navigation: true,
+		navigationHover: false,
+		mobileNavHover: false,
+		playPause: false,
+		pauseOnClick: false,
+		pagination			: true,
+		time: 7000,
+		transPeriod: 1000,
+		minHeight: '200px'
+	});
+
+	
+	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
+	function updateSizes_vat(){		
+		$('#slider3 .carousel.main ul').trigger("updateSizes");
+	}
+	updateSizes_vat();
+
+}); //
+$(window).load(function() {
+	//
+
+}); //
+
+
+
+
+
+
+
+</script>		
+
+</head>
+
+<body class="main">
+
+
+
+
+
+
+
+
+
+<div id="main">
+
+
+
+<div class="top1 clearfix">
+<header><div class="logo_wrapper log"><a href="index.html" class="logo"><img src="images/logo.png" width="200px" height="100px"alt=""></a></div></header>
+<div class="top2 clearfix">
+<div class="search-form-wrapper clearfix">
+<form id="search-form" action="search.php" method="GET" accept-charset="utf-8" class="navbar-form" >
+	<input type="text" name="s" value='Search' onBlur="if(this.value=='') this.value='Search'" onFocus="if(this.value =='Search' ) this.value=''">
+	<a href="#" onClick="document.getElementById('search-form').submit()"></a>
+</form>	
+</div>	
+<div class="menu_wrapper clearfix">
+<div class="navbar navbar_">
+	<div class="navbar-inner navbar-inner_">
+		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+		<div class="nav-collapse nav-collapse_ collapse">
+			<ul class="nav sf-menu clearfix">
+<li class="active"><a href="index.html">Inicio</a></li>
+<li><a href="index-1.html">Nosotros</a></li>
+
+							
+
+<li><a href="index-3.html">destinos</a></li>
+
+<li><a href="galeria.html">Blog</a></li>
+											
+<li><a href="index-6.html">contacto</a></li>	
+    </ul>
+		</div>
+	</div>
+</div>	
+</div>
+</div>	
+</div>
+
+<div class="container" >
+
+
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        
+	
+	<video autoplay loop class="embed-responsive-item"  controls muted>
+  <source src="images/lo.mp4" width="500px" height="500px" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  
+</video>
+        <div class="carousel-caption">
+          
+          
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/main1.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+         
+         
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/main3.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+         
+          
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only"></span>
+    </a>
+  </div>
+  
+  
+  
+</div>
+<nav class="menu_splash">
+	<ul id="menu_splash" class="clearfix">
+		<li class="nav1">
+			<a href="index-3.html" class="rollover">
+			<div class="cube">
+			  <div class="front">    
+			    <img src="images/ic1.png" alt="" class="img_icon">
+			    <div class="txt1">Destinos</div>
+			  </div>
+			  <div class="back">
+			  	<img src="images/ic1.png" alt="" class="img_icon">
+			    <div class="txt1">Destinos</div>
+			  </div>
+			</div>
+			</a>
+		</li>
+		<li class="nav2">
+			<a href="index-6.html" class="rollover">
+			<div class="cube">
+			  <div class="front">    
+			    <img src="images/ic2.png" alt="" class="img_icon">
+			    <div class="txt1">Tiquetes</div>
+			  </div>
+			  <div class="back">
+			  	<img src="images/ic2.png" alt="" class="img_icon">
+			    <div class="txt1">tiquetes</div>
+			  </div>
+			</div>
+			</a>
+		</li>
+		<li class="nav3">
+			<a href="index-6.html" class="rollover">
+			<div class="cube">
+			  <div class="front">    
+			    <img src="images/ic3.png" alt="" class="img_icon">
+			    <div class="txt1">Mejor tour</div>
+			  </div>
+			  <div class="back">
+			  	<img src="images/ic3.png" alt="" class="img_icon">
+			    <div class="txt1">Mejor Tour</div>
+			  </div>
+			</div>
+			</a>
+		</li>
+		<li class="nav4">
+			<a href="https://s-ec.bstatic.com/images/hotel/max1024x768/681/68184730.jpg" class="rollover">
+			<div class="cube">
+			  <div class="front">    
+			    <img src="images/ic4.png" alt="" class="img_icon">
+			    <div class="txt1">Hoteles</div>
+			  </div>
+			  <div class="back">
+			  	<img src="images/ic4.png" alt="" class="img_icon">
+			    <div class="txt1">Hoteles</div>
+			  </div>
+			</div>
+			</a>
+		</li>
+	</ul>
+</nav>
+</div>
+
+
+
+<div id="slider3_wrapper">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div id="slider3">
+<div class="slider3-title">Destinos Populares</div>	
+	
+<div class="carousel-box row">
+	<div class="inner span12">	
+
+		<div class="carousel main">
+			<ul>
+				<li>
+					<div class="thumb-carousel banner1">
+						<div class="thumbnail clearfix">
+							<a href="index-3.html">
+								<figure>
+									<img src="images/berlin.jpg" alt="" class="img-circle">
+									<em></em>
+								</figure>
+								<div class="caption">
+									Berlin
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel banner1">
+						<div class="thumbnail clearfix">
+							<a href="index-3.html">
+								<figure>
+									
+									<img src="images/roma.jpg" alt="" class="img-circle">
+									<em></em>
+								</figure>
+								<div class="caption">
+									Roma
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel banner1">
+						<div class="thumbnail clearfix">
+							<a href="index-3.html">
+								<figure>
+									<img src="images/los angeles.jpg" alt="" class="img-circle">
+									<em></em>
+								</figure>
+								<div class="caption">
+									Los Angeles
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					
+				</li>
+				<li>
+					
+				</li>
+				<li>
+					<								
+							</a>								
+						</div>
+					</div>
+				</li>																								
+			</ul>
+		</div>
+	</div>
+</div>
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span9">
+	
+<h1>Bienvenido A Viajar</h1>
+
+
+
+
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		
+		<img src="images/avion.jpg" alt="" class="grad2">
+		<div class="caption">
+			<p>
+				Hola,
+
+Si tu sueño siempre ha sido viajar por el mundo has llegado al lugar correcto.
+
+No importa si eres mujer u hombre, tienes 15 o 90 años , estudias o trabajas, viajas solo o con tu familia, aquí encontrarás todo lo que necesitas saber para hacer tu sueño realidad, desde unas vacaciones familiares hasta un viaje sin fecha de regreso.
+
+Viajar no es una actividad que esté limitada para los ricos, es algo que todos podemos hacer si realmente nos lo proponemos.
+
+El mundo es un lugar enorme que merece la pena ser explorado y aquí estamos nosotros para ayudarte.
+			</p>
+			
+		</div>
+	</div>
+</div>
+
+</div>
+<div class="span3">
+	
+<h2>Servicios</h2>
+
+<ul class="ul1">
+  <li><a href="https://static.iris.net.co/semana/upload/images/2016/6/16/477990_1.jpg">Reserva</a></li>
+ <li><a href="https://static.iris.net.co/semana/upload/images/2016/6/16/477990_1.jpg">Tiquetes online</a></li>
+  <li><a href="https://s-ec.bstatic.com/images/hotel/max1024x768/681/68184730.jpg">Hotel </a></li>
+  
+ 		            		      	      			      
+</ul>
+
+
+
+</div>	
+</div>	
+</div>	
+</div>
+
+<div class="bot1">
+<div class="container">
+<div class="row">
+<div class="span3">
+	<div class="bot1_title">Siguenos</div>
+	<div class="social_wrapper">
+		<ul class="social clearfix">
+		    <li><a href="#"><img src="images/social_ic1.png"></a></li>
+		    <li><a href="#"><img src="images/social_ic2.png"></a></li>
+		    <li><a href="#"><img src="images/social_ic3.png"></a></li>		    
+		    <li><a href="#"><img src="images/social_ic4.png"></a></li>	
+		    <li><a href="#"><img src="images/social_ic5.png"></a></li>	
+		    <li><a href="#"><img src="images/social_ic6.png"></a></li>	
+		</ul>
+	</div>
+</div>
+<div class="span3">
+	<div class="bot1_title">Destinatinos</div>
+	<ul class="ul0">
+	  <li><a href="index-3.html">Roma</a></li>
+	  <li><a href="index-3.html">Paris</a></li>
+	  <li><a href="index-3.html">Los Angeles</a></li>
+	  <li><a href="index-3.html">Berlin</a></li>
+	</ul>
+</div>
+<div class="span3">
+	<div class="bot1_title">Links</div>
+	<ul class="ul0">
+	  <li><a href="https://www.youtube.com/watch?v=ZHHbpy91O2E">VIDEO</a></li>
+	  <li><a href="#"></a></li>
+	  <li><a href="#"></a></li>
+	  <li><a href="#"></a></li>
+	  <li><a href="#"></a></li>
+	</ul>
+</div>	
+<div class="span3">
+	<div class="bot1_title">Contactanos</div>
+	<div class="bot1_txt1">
+		LLamanos para mayor informacion:<br>
+		<span>1 800 123 4567</span><br>
+
+		<br>
+<br>
+Telefono +1 800 123 1234<br>
+E-mail: <a href="#">mail@bteamny.com</a>
+	</div>
+</div>
+</div>	
+</div>	
+</div>
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="copyright">Copyright   © 2017 Travel Guide. All rights reserved.&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<a href="#">Privacy Policy</a>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<a href="#">Terms of Use</a>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<a href="https://gridgum.com/themes/tag/free-css-templates/">Free CSS Templates</a></div>
+</div>	
+</div>	
+</div>	
+</footer>
+
+	
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
